@@ -5,12 +5,12 @@
 #include <ucontext.h>
 typedef int uthread_t;
 
-struct uthread_list {
+struct uthread_elem {
 	uthread_t             id;
 	ucontext_t*           uth_context;
-	struct uthread_list*  next;
+	struct uthread_elem*  next;
 };
-
+typedef  uthread_elem* uthread_list;
 //make_vcpu : créer un processeur virtuel
 int make_vcpu(int);
 /*create_uthread : créer un thread

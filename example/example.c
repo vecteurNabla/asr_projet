@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "uthread.h"
+#include "../src/uthread.h"
 
 void thread_1(void* args)
 {
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 	set_quantum(17);
 
-	if (create_vcpu(42) == 0) {
+	if (make_vcpu(42)) {
 		printf("Échec de la création des vcpu\n");
 		exit(1);
 	}

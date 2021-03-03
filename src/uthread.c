@@ -5,7 +5,7 @@
 int make_vcpu(int n_vcpu){}
 /*create_uthread : créer un thread
 qui lance une fonction avec arguments*/
-uthread_t create_uthread(void*(void*) f,void* args){}
+uthread_t create_uthread(void  (*function) (void*),void* args){}
 //permet de spécifier le quantum en secondes
 int set_quantum(int quantum){}
 //commence tout les threads

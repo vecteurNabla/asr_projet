@@ -26,11 +26,11 @@ int main(int argc, char *argv[])
 		printf("Échec de la création des vcpu\n");
 		exit(1);
 	}
-	
+
 	ut1 = create_uthread(&thread_1, NULL);
 	ut2 = create_uthread(&thread_2, NULL);
 
 	start_uthreads();
-	
+
     return 0;
 }

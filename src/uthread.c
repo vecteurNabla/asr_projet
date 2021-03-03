@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "uthread.h"
 //make_vcpu : créer un processeur virtuel
 int make_vcpu(int n_vcpu){}

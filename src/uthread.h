@@ -1,6 +1,8 @@
 #ifndef UTHREAD_H
 #define UTHREAD_H
 typedef int uthread_t;
+#include <stdio.h>
+#include <stdlib.h>
 //make_vcpu : créer un processeur virtuel
 int make_vcpu(int);
 /*create_uthread : créer un thread

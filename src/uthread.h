@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <ucontext.h>
 typedef int uthread_t;
-
+typedef struct uthread_elem uthread_elem;
 struct uthread_elem {
 	uthread_t             id;
 	ucontext_t*           uth_context;
